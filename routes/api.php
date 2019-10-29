@@ -22,3 +22,5 @@ Route::group(['middleware'=>'auth.jwt'],function(){
 });
 
 
+Route::post('/user/login','\App\Http\Controllers\UserController@login');
+Route::post('/user/register','\App\Http\Controllers\UserController@register');
